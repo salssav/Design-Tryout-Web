@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'OffBit';
+  src: URL(./assets/fonts/OffBitTrial-Dot.ttf) format('truetype');
+}
+/*INFO TEXT*/
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 30px 30px 0 20px;
+  background-color:rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 10rem;
+  font-family: OffBit;
+}
+/*CARDS WITH TEXT */
+.tile-image {
+  max-height: 350px;
+  max-width:400px;
+  float: left;
+  margin-right: 40px;
+}
+.card{
+  width:45%
+}
+
+.left{
+  float:left;
+}
+.right{
+  float:right;
+}
+/*FOOTER*/
+footer {
+  margin-top: 20px;
+  text-align: right;
+  color: rgb(107, 123, 169);
+}
+
+
+
+@media (max-width: 750px){
+
+  .logo{
+    width:80%;
+    /*margin-left: 20%;*/
+    max-height: 100px;
+  }
+
+  .intro{
+    padding-right: 10px;
+    align-items: center;
+  }
+
+  h1{
+    font-size: 8rem;
+    text-align:left;
+  }
+
+  .card{
+    width:100%;
+    display: block;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .card img {
+    margin-bottom: 10px;
+    display: inline;
+    margin-left: 10px;
+  }
+
+  .tile-image{
+  width: 500px;
+  }
+  .main{
+    width:100%;
+    padding: none;
+  }
+
+  body {
+    margin-left: 20px;
+}
+}
